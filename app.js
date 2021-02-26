@@ -5,12 +5,23 @@ function getWether() {
         .then(showWeather)
 }
 // ============= showWeather on page ==================
+function timeConverter(UNIX_timestamp) {
+    let a = new Date(UNIX_timestamp * 1000);
+    let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    let year = a.getFullYear();
+    let month = months[a.getMonth()];
+    let date = a.getDate();
+    let time = date + ' ' + month + ' ' + year;
+    return time;
+}
+// ================ conwert from unix time
 function showWeather(data) {
     console.log(data);
     nameCity.innerHTML = data.name;
     temp.innerHTML = data.main.temp;
     minTemp.innerHTML = data.main.temp_min;
     maxTemp.innerHTML = data.main.temp_max;
+    time.innerHTML = timeConverter(data.sys.sunrise);
 
     console.log(new Date(data.sys.sunrise * 1000).toString());
 }
