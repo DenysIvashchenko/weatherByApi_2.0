@@ -1,0 +1,12 @@
+const nameCity = document.querySelector('.name-city');
+const temp = document.querySelector('.temp p');
+const minTemp = document.querySelector('.min-temp p');
+const maxTemp = document.querySelector('.max-temp p');
+const time = document.querySelector('.time h2');
+const icon = document.querySelector('.icon');
+const description = document.querySelector('.description p');
+const humidity = document.querySelector('.humidity p');
+const visibility = document.querySelector('.visibility p');
+const pressure = document.querySelector('.pressure p');
+const speed = document.querySelector('.speed p');
+const feels_like = document.querySelector('.feels_like p');

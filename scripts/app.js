@@ -4,7 +4,7 @@ function getWether() {
         .then(res => res.json())
         .then(showWeather)
 }
-// ============= conwert from unix time ==================
+// ============= convert from unix time ==================
 function timeConverter(UNIX_timestamp) {
     let a = new Date(UNIX_timestamp * 1000);
     let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -24,8 +24,14 @@ function showWeather(data) {
     temp.innerHTML = data.main.temp;
     minTemp.innerHTML = data.main.temp_min;
     maxTemp.innerHTML = data.main.temp_max;
+    feels_like.innerHTML = data.main.feels_like;
     time.innerHTML = timeConverter(data.dt);
     icon.innerHTML = `<img src ="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">`;
+    humidity.innerHTML = data.main.humidity;
+    description.innerHTML = data.weather[0].description;
+    visibility.innerHTML = data.visibility / 1000;
+    pressure.innerHTML = data.main.pressure;
+    speed.innerHTML = data.wind.speed;
 }
 // ======== creating select with option ======
 const option = document.createElement('select');

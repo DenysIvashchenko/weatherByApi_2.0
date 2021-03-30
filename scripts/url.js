@@ -3,8 +3,9 @@ const param = {
     "appid": "934b3a451ef4d40005c63174fce28dc2"
 };
 const cities = [
+    { "Kyiv,ua": "Kyiv" },
     { "London,uk": "London" },
     { "Minsk,by": "Minsk" },
     { "Gdansk,pl": "Gdansk" },
-    { "Kyiv,ua": "Kyiv" }
+    { "Dubai,ae": "Dubai" }
 ];

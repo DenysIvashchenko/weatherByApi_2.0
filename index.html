@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wether</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -14,44 +14,68 @@
         <div class="home-video">
             <video src="./video/videos.mp4" autoplay loop muted></video>
         </div>
-        <div class="home-content">
-
-        </div>
     </section>
 
-    <section class="sectionWeter home-content">
+    <section class="home-content">
         <div class="container">
+
             <div class="wrapper">
-                <h1 class="name-city"></h1>
-                <div class="time">
-                    <h2></h2>
+                <div class="header">
+                    <h1 class="name-city"></h1>
+                    <div class="time">
+                        <h2></h2>
+                    </div>
                 </div>
-                <div class="wether-info">
-                    <div class="temp">temp:
-                        <p></p>
-                    </div>
-                    <div class="min-temp">min temp:
-                        <p></p>
-                    </div>
-                    <div class="max-temp">max temp:
-                        <p></p>
+
+                <div class="info-wrapp">
+                    <!-- section temp -->
+                    <div class="wether-info">
+                        <div class="temp"><span>Temp:</span>
+                            <p></p> <span>&deg;</span>
+                        </div>
+                        <div class="min-temp"><span>Min :</span>
+                            <p></p> <span>&deg;</span>
+                        </div>
+                        <div class="max-temp"><span>Max :</span>
+                            <p></p> <span>&deg;</span>
+                        </div>
+                        <div class="feels_like"><span>Feels Like:</span>
+                            <p></p> <span>&deg;</span>
+                        </div>
                     </div>
 
-                    <div class="">max temp:
-                        <p></p>
-                    </div>
-                    <div class="icon">
-                        <p></p>
+                    <div class="wether-info-rest">
+                        <!-- section description -->
+                        <div class="humidity"><span>Humidity:</span>
+                            <p></p> <span>%</span>
+                        </div>
+                        <div class="visibility"><span>Visibility:</span>
+                            <p></p> <span>m</span>
+                        </div>
+                        <div class="pressure"><span>Pressure:</span>
+                            <p></p> <span>hPa</span>
+                        </div>
+                        <div class="speed"><span>Wind:</span>
+                            <p></p> <span>m/s</span>
+                        </div>
                     </div>
 
+                    <div class="wether-info-icon">
+                        <!-- wether-icon -->
+                        <div class="icon">
+                        </div>
+                        <div class="description">
+                            <p></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="citys"></div>
             </div>
         </div>
     </section>
-    <script src="var.js"></script>
-    <script src="url.js"></script>
-    <script src="app.js"></script>
+    <script src="./scripts/var.js"></script>
+    <script src="./scripts/url.js"></script>
+    <script src="./scripts/app.js"></script>
 </body>
 
 </html>
