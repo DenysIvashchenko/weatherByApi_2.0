@@ -123,12 +123,25 @@ html, body {
     padding: 10px 0;
 }
 .citys select {
-    width: 50%;
+    width: 40%;
     height: 30px;
     border-radius: 5px;
-    background: #4b4b4b;
+    background: rgba(0, 0, 0, 0.4);
     color: #fff;
     font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footer p {
+    padding: 3px 5px;
+    text-transform: capitalize;
+    text-align: right;
 }
 
 
@@ -138,5 +151,12 @@ html, body {
 @media screen and (max-width: 700px) {
     video {
       display: none;
+    }
+    .container {
+        color: #fff;
+    }
+    .info-wrapp {
+        color: #fff;
+        flex-wrap:wrap;
     }
   }
