@@ -7,5 +7,6 @@ const cities = [
     { "London,uk": "London" },
     { "Minsk,by": "Minsk" },
     { "Gdansk,pl": "Gdansk" },
-    { "Dubai,ae": "Dubai" }
+    { "Dubai,ae": "Dubai" },
+    { "Moscow,ru": "Moscow" }
 ];
