@@ -1,5 +1,4 @@
 const switchMode = document.querySelector('.button img');
-console.log(switchMode)
 
 switchMode.onclick = () => {
     let img = document.querySelector('.button img');
