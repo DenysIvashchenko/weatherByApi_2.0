@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: 1s;
 }
 
 *,
@@ -26,11 +27,11 @@ html, body {
     content: "";
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 3;
 }
 .home-video {
     padding-top: 56.25%;
@@ -49,13 +50,23 @@ html, body {
     top: 0;
     left: 0;
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center; */
     align-items: center;
-    /* color: #fff; */
-    z-index: 3;
+    z-index: 4;
 }
-
+/* ====== button ======== */
+.button {
+    border-radius:50%;
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    transition: 1s;
+}
+.button:hover{
+    transform: rotate(20deg);
+}
+.button img {
+    width: 50px;
+}
 /* ========= wether ========= */
 .header {
     display: flex;
@@ -72,18 +83,22 @@ html, body {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
-    /* border: 1px solid black; */
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
 .name-city {
     text-transform: uppercase;
     margin: 10px 5px;
     font-size: 30px;
     font-family: sans-serif;
+    color: #fff;
 }
 .time h2 {
     margin: 10px 5px;
     font-size: 30px;
     font-family: sans-serif;
+    color: #fff;
 }
 .wether-info p {
     display: inline;
@@ -95,7 +110,7 @@ html, body {
 /* ======= wether info */
 .info-wrapp {
     display: flex;
-    color: #1c1c1c;
+    color: #fafafa;
     font-size: 25px;
     font-weight: 700;
     font-family:serif;
@@ -142,10 +157,11 @@ html, body {
     padding: 3px 5px;
     text-transform: capitalize;
     text-align: right;
+    color: #fff;
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     video {
         display: none;
       }
