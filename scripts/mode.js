@@ -5,13 +5,13 @@ switchMode.onclick = () => {
     let theme = document.getElementById('theme');
     let video = document.querySelector('video');
 
-    if (theme.getAttribute("href") == "./css/style.css") {
+    if (theme.getAttribute("href") == "./css/dark.css") {
         theme.href = "./css/light.css";
         img.src = "./video/iconSun.png"
         video.src = "./video/Sunrise.mp4"
     }
     else {
-        theme.href = "./css/style.css";
+        theme.href = "./css/dark.css";
         img.src = "./video/iconMoon.png"
         video.src = "./video/Sunset.mp4"
     }

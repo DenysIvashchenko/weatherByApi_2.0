@@ -61,6 +61,7 @@ body{
     top: 60px;
     left: 100px;
     transition: 1s;
+    cursor: pointer;
 }
 .button:hover{
     transform: rotate(20deg);

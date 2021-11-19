@@ -62,6 +62,7 @@ body{
     top: 60px;
     left: 100px;
     transition: 1s;
+    cursor: pointer;
 }
 .button:hover{
     transform: rotate(20deg);
@@ -188,7 +189,6 @@ body{
         color: #fff;
     }
     .info-wrapp {
-        display: block;
         color: #fff;
         flex-direction: row;
     }

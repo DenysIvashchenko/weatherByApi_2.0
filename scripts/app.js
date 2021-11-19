@@ -1,10 +1,10 @@
 function getWether() {
     const cityId = document.querySelector('#city').value;
-    fetch(`${param.url}weather?q=${cityId}&units=metric&appid=${param.appid}`)
+    fetch(`${param.url}?q=${cityId}&units=metric`)
         .then(res => res.json())
         .then(showWeather)
 }
-// ============= convert from unix time ==================
+// ============= convert from unix time ===============
 function timeConverter(UNIX_timestamp) {
     let a = new Date(UNIX_timestamp * 1000);
     let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -17,7 +17,7 @@ function timeConverter(UNIX_timestamp) {
     let time = `${date} ${month} ${year}`;
     return time;
 }
-// ================  showWeather on page  ============
+// ================  showWeather on page  =============
 function showWeather(data) {
     console.log(data);
     nameCity.innerHTML = data.name;
@@ -33,7 +33,7 @@ function showWeather(data) {
     pressure.innerHTML = data.main.pressure;
     speed.innerHTML = data.wind.speed;
 }
-// ======== creating select with option ======
+// ======== creating select with option ===============
 const option = document.createElement('select');
 option.setAttribute('id', 'city');
 
@@ -43,6 +43,7 @@ for (let i = 0; i < cities.length; i++) {
     }
 }
 document.querySelector('.citys').append(option);
-// ---------------------------------------------
+// ====================================================
+
 document.querySelector('#city').addEventListener('change', getWether);
 getWether();
